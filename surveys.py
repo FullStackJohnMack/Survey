@@ -34,21 +34,29 @@ satisfaction_survey = Survey(
         Question("Are you likely to shop here again?"),
     ])
 
-personality_quiz = Survey(
-    "Rithm Personality Test",
-    "Learn more about yourself with our personality quiz!",
-    [
-        Question("Do you ever dream about code?"),
-        Question("Do you ever have nightmares about code?"),
-        Question("Do you prefer porcupines or hedgehogs?",
-                 ["Porcupines", "Hedgehogs"]),
-        Question("Which is the worst function name, and why?",
-                 ["do_stuff()", "run_me()", "wtf()"],
-                 allow_text=True),
-    ]
-)
 
-surveys = {
-    "satisfaction": satisfaction_survey,
-    "personality": personality_quiz,
-}
+# def run():
+#     print(satisfaction_survey.questions[0].choices)
+# print(satisfaction_survey.questions[0].question.choices)
+
+
+# run()
+
+# personality_quiz = Survey(
+#     "Rithm Personality Test",
+#     "Learn more about yourself with our personality quiz!",
+#     [
+#         Question("Do you ever dream about code?"),
+#         Question("Do you ever have nightmares about code?"),
+#         Question("Do you prefer porcupines or hedgehogs?",
+#                  ["Porcupines", "Hedgehogs"]),
+#         Question("Which is the worst function name, and why?",
+#                  ["do_stuff()", "run_me()", "wtf()"],
+#                  allow_text=True),
+#     ]
+# )
+
+# surveys = {
+#     "satisfaction": satisfaction_survey,
+#     "personality": personality_quiz,
+# }
